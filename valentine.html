@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Nikita ❤️</title>
+
+<style>
+body {
+margin: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #ff758c, #ff7eb3);
+font-family: 'Georgia', serif;
+text-align: center;
+overflow: hidden;
+}
+
+.card {
+background: white;
+padding: 50px;
+border-radius: 25px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+max-width: 500px;
+animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+color: #d6336c;
+font-size: 28px;
+}
+
+p {
+font-size: 18px;
+color: #444;
+line-height: 1.6;
+}
+
+h2 {
+color: #ff4d6d;
+margin-top: 25px;
+}
+
+.buttons {
+margin-top: 30px;
+position: relative;
+}
+
+button {
+padding: 12px 30px;
+font-size: 16px;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+margin: 10px;
+transition: 0.3s;
+}
+
+#yes {
+background-color: #ff4d6d;
+color: white;
+}
+
+#yes:hover {
+transform: scale(1.1);
+background-color: #e0315b;
+}
+
+#no {
+background-color: #ddd;
+position: absolute;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+<source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+</audio>
+
+<div class="card">
+<h1>Nikita ❤️</h1>
+
+<p>
+From the moment you came into my life,
+something changed in the most beautiful way.
+You make ordinary days feel special,
+and I can’t imagine this Valentine’s Day without asking you something important...
+</p>
+
+<h2>Will you be my Valentine? 💌</h2>
+
+<div class="buttons">
+<button id="yes" onclick="sayYes()">Yes 💖</button>
+<button id="no" onmouseover="moveNo()">No 🙈</button>
+</div>
+</div>
+
+<script>
+function sayYes() {
+alert("Nikita, you just made me the happiest person alive ❤️");
+}
+
+function moveNo() {
+let noBtn = document.getElementById("no");
+noBtn.style.top = Math.random() * 200 + "px";
+noBtn.style.left = Math.random() * 200 + "px";
+}
+</script>
+
+</body>
+</html>
